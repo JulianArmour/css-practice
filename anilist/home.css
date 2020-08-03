@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0B1622;
+    margin: 0;
+}
+
+nav {
+    align-items: center;
+    background-color: #152232;
+    display: flex;
+    flex-direction: row;
+    height: 68px;
+    justify-content: space-evenly;
+}
+
+nav a {
+    text-decoration: none;
+    color: #a0b1c5;
+    font-family: Overpass, sans-serif;
+    font-size: 0.9em;
+    margin: 0 16px;
+}
+
+.logo-section {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.profile-section {
+    align-items: center;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.logo-link {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 50px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.search-icon {
+    color: #777a9e;
+    height: 1.17rem;
+    margin-right: 1em;
+    min-width: 1.17em;
+}
+
+.profile-picture {
+    border-radius: 3px;
+    height: 38px;
+    object-fit: cover;
+    width: 38px;
+}
+
+.notification-pill {
+    background-color: #fa7a7a;
+    border-radius: 50%;
+    color: #fff2f2;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 0.75rem;
+    height: 1.55em;
+    text-align: center;
+    /*padding: 0.1em 0.3em;*/
+    width: 1.55em;
+}
