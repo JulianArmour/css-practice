@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 html {
     box-sizing: border-box;
@@ -80,4 +81,34 @@ nav a {
     text-align: center;
     /*padding: 0.1em 0.3em;*/
     width: 1.55em;
+}
+
+.home-main {
+    color: #91adbd;
+    display: grid;
+    grid-template-columns: auto 45%;
+    max-width: 1320px;
+    margin: 2em auto 0;
+}
+
+.home-feed {
+    display: grid;
+    grid-template-rows: [header-start] 2em [write-status-start] 2em [activity-start] auto;
+    padding: 10em;
+}
+
+.home-feed-header {
+    display: flex;
+    align-items: center;
+}
+
+.home-main h1 {
+    flex-grow: 1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.write-status-input {
+    width: 100%;
 }
