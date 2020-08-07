@@ -94,7 +94,6 @@ nav a {
 .home-feed {
     display: grid;
     grid-template-rows: [header-start] 2em [write-status-start] 2em [activity-start] auto;
-    padding: 10em;
 }
 
 .home-feed-header {

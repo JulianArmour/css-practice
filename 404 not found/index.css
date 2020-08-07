@@ -1,0 +1,34 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 1em;
+}
+
+body {
+    padding: 0.5vh 6.67vw;
+}
+
+main {
+    margin-top: 4em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+h1 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.big-txt {
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+}
+
+main > img {
+    width: 100%;
+}
