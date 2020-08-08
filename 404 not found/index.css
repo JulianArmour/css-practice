@@ -7,7 +7,13 @@
 }
 
 body {
-    padding: 0.5vh 6.67vw;
+    padding: 0.5vh 3.33vw;
+}
+
+h1 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.5rem;
+    text-transform: uppercase;
 }
 
 main {
@@ -17,18 +23,76 @@ main {
     justify-content: center;
 }
 
-
-h1 {
-    font-family: 'Inconsolata', monospace;
-    font-size: 1.5rem;
-    text-transform: uppercase;
+.txt-wrap {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    font-family: 'Space Mono', monospace;
 }
 
 .big-txt {
-    font-family: 'Space Mono', monospace;
+    color: #333333;
     font-weight: bold;
+    font-size: 2.8rem;
+    margin-bottom: 0.8em;
 }
 
-main > img {
-    width: 100%;
+.normal-txt {
+    color: #4f4f4f;
+    font-size: 1.125rem;
+}
+
+.txt-wrap > a {
+    display: block;
+    padding: 1.5em 2.69em;
+    margin-top: 2.5em;
+    max-width: 16em;
+    color: white;
+    background-color: #333333;
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+}
+
+footer {
+    margin-top: 17em;
+    text-align: center;
+}
+
+footer > small {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+@media screen and (min-width: 801px) {
+    main {
+        margin-top: 16vh;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    main > img {
+        align-self: center;
+        max-width: 40%;
+    }
+
+    .txt-wrap {
+        /*margin-left: 4em;*/
+        max-width: 48vw;
+        justify-content: space-between;
+    }
+
+    .big-txt {
+        margin: 0;
+        /*font-size: 4rem;*/
+        font-size: 4.5vw;
+    }
+
+    .normal-txt {
+        max-width: 60%;
+        font-size: 1.7vw;
+    }
 }
