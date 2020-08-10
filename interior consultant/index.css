@@ -1,0 +1,51 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 1em;
+    --color-main: white;
+    --color-bg: #181719;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-main);
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+}
+
+.nav-header > span {
+    display: block;
+    padding: 0.5em 0.55em;
+    border: solid 1px var(--color-main);
+    margin-right: auto;
+    font-size: 0.875rem;
+}
+
+.nav-header button {
+    padding: 0;
+    border: none;
+    background: none;
+    color: var(--color-main);
+    cursor: pointer;
+}
+
+.nav-links {
+    display: none;
+}
+
+.main > p {
+    max-width: 14em;
+}
+
+.read-more {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    max-width: 9em;
+}
+
