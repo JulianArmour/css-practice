@@ -14,13 +14,15 @@ h1 {
 }
 
 .introduction {
-    margin-top: 2.375em;
+    margin: 2.375em 0 3em;
     font-family: 'Poppins', sans-serif;
 }
 
 .introduction > h2 {
     margin-bottom: 0;
+    margin-top: 0;
     font-size: 1.125rem;
+    text-transform: uppercase;
 }
 
 .introduction > p {
@@ -31,12 +33,6 @@ h1 {
 .member-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
-
-@media screen and (min-width: 800px) {
-    .member-cards {
-        grid-template-columns: repeat(3, fit-content(1px));
-    }
 }
 
 .member-card {
@@ -57,20 +53,6 @@ h1 {
     margin-top: 3em;
 }
 
-@media screen and (min-width: 800px) {
-    .card4 {
-        margin-top: 0;
-    }
-
-    .card5 {
-        margin-top: 3em;
-    }
-
-    .card6 {
-        margin-top: 0;
-    }
-
-}
 
 .member-card > h3 {
     margin: 0 0.375em;
@@ -89,17 +71,80 @@ h1 {
     max-width: 37vw;
 }
 
-@media screen and (min-width: 800px) {
-    .member-card > img {
-        width: 17vw;
-        max-width: 476px;
-    }
-}
-
 .member-card > p {
     margin: 0.625em 0;
     grid-row: 2 / 3;
     grid-column: 1 / 2;
     font-family: 'Poppins', sans-serif;
     font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.footer {
+    margin-top: 4em;
+    color: #A9A9A9;
+   text-align: center;
+    font-size: 0.875rem;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        margin: auto 20%;
+    }
+
+    .header {
+        margin-top: 1em;
+        max-width: 22vw;
+    }
+
+    .intro-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .introduction {
+        margin-left: 2em;
+        max-width: 28vw;
+    }
+
+    .introduction > p {
+        font-size: 1.125rem;
+    }
+
+    .member-cards {
+        margin-top: 2em;
+        grid-template-columns: repeat(3, fit-content(1px));
+        grid-column-gap: 4em;
+        justify-content: center;
+    }
+
+    .member-card > h3 {
+        font-size: 0.75rem;
+    }
+
+    .member-card > p {
+        font-size: 1.125rem;
+    }
+
+    .member-card > img {
+        width: 17vw;
+        max-width: 476px;
+    }
+
+    .card2 {
+        margin-top: 5em;
+    }
+
+    .card4 {
+        margin-top: 0;
+    }
+
+    .card5 {
+        margin-top: 5em;
+    }
+
+    .card6 {
+        margin-top: 0;
+    }
+
 }
