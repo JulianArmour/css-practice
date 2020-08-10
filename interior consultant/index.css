@@ -49,3 +49,34 @@ body {
     max-width: 9em;
 }
 
+.designer-card {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: max-content max-content 1fr;
+    grid-template-areas:
+        "img name"
+        "img caption"
+        "desc desc";
+}
+
+.designer-card > img {
+    margin-right: 1.5em;
+    max-width: 4em;
+    border-radius: 2em;
+    grid-area: img;
+}
+
+.designer-card > h2 {
+    grid-area: name;
+    font-size: 0.75rem;
+}
+
+.designer-card > .caption {
+    grid-area: caption;
+    font-size: 0.75rem;
+}
+
+.designer-card > .description {
+    grid-area: desc;
+}
