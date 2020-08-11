@@ -4,6 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Modern Interior</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@400;700&family=Montserrat:wght@300;500;600&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/5e6d23a853.js" crossorigin="anonymous"></script>
 </head>
@@ -11,19 +13,33 @@
 <header class="nav-header">
     <span>This Interior</span>
     <nav class="nav-links">
-        <a href="#">Home</a><a href="#">Collection</a><a href="#">About</a><a href="#">Contact</a>
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#">Collection</a>
+        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#">Contact</a>
     </nav>
-    <button type="button">
-        <i class="fas fa-bars fa-lg"></i>
+    <button class="icon-btn" type="button">
+        <i class="fas fa-bars fa-2x"></i>
     </button>
 </header>
+<div class="mobile-nav">
+    <button class="icon-btn" type="button">
+        <i class="fas fa-times fa-2x"></i>
+    </button>
+    <nav>
+        <a href="#" class="nav-link selected">Home</a>
+        <a href="#" class="nav-link">Collection</a>
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link">Contact</a>
+    </nav>
+</div>
 <main class="main">
     <h1>Modern interior</h1>
     <p>A full-service residential and commercial interior design and staging company offering professional
        organizing and eco-services.</p>
     <div class="read-more">
         <p>Read more</p>
-        <i class="fas fa-long-arrow-alt-right fa-2x"></i>
+        <i class="fas fa-long-arrow-alt-right fa-lg"></i>
     </div>
     <section class="preview">
         <img src="photo1.png" alt="The interior design">
@@ -36,7 +52,8 @@
     </section>
 </main>
 <footer class="footer">
-    Julian Armour @ DevChallenges.io
+    <hr>
+    <p>Julian Armour @ DevChallenges.io </p>
 </footer>
 </body>
 </html>
