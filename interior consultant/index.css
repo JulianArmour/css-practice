@@ -49,8 +49,28 @@ body {
     max-width: 9em;
 }
 
+.preview {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: [pic-start] 1fr [card-start] 3em [pic-end] max-content [card-end];
+}
+
+.preview > img {
+    max-width: min(800px, 100%);
+    grid-column: 1 / 2;
+    grid-row: pic-start / pic-end;
+    justify-self: right;
+}
+
 .designer-card {
-    padding: 1em;
+    background-color: var(--color-bg);
+    box-shadow: 0 0.25em 0.25em rgba(0, 0, 0, 0.25);
+    margin-right: 5%;
+    padding: 1em 1.5em;
+    max-width: 18.5em;
+    grid-column: 1 / 2;
+    grid-row: card-start / card-end;
+    justify-self: right;
     display: grid;
     grid-template-columns: max-content 1fr;
     grid-template-rows: max-content max-content 1fr;
@@ -61,18 +81,20 @@ body {
 }
 
 .designer-card > img {
-    margin-right: 1.5em;
-    max-width: 4em;
+    margin-right: 0.5em;
+    max-width: 2em;
     border-radius: 2em;
     grid-area: img;
 }
 
 .designer-card > h2 {
+    margin: 0;
     grid-area: name;
     font-size: 0.75rem;
 }
 
 .designer-card > .caption {
+    margin: 0;
     grid-area: caption;
     font-size: 0.75rem;
 }
