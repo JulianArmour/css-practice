@@ -65,6 +65,10 @@ body {
     padding: 0.5em;
 }
 
+.mobile-nav.visible {
+    display: block;
+}
+
 .mobile-nav > nav {
     margin-top: 5vh;
     display: flex;
@@ -189,10 +193,11 @@ body {
     }
 
     .main {
-        margin-top: 10em;
+        margin: 10em auto 0;
         display: grid;
-        grid-template-columns: 23em 1fr;
-        grid-gap: 5%;
+        grid-template-columns: 23em fit-content(46em);
+        grid-gap: 10%;
+        justify-content: center;
     }
 
     .intro > h1 {
@@ -246,5 +251,11 @@ body {
     }
     .footer > p {
         font-size: 0.875rem;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    :root {
+        font-size: 1.1111vw;
     }
 }
