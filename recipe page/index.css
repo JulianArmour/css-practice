@@ -1,0 +1,148 @@
+:root {
+    box-sizing: border-box;
+    font-size: 1em;
+    --color-highlight: #f2994a;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    color: #333333;
+    padding: 0.5em;
+}
+
+.intro > h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.intro-txt {
+    display: flex;
+    align-items: start;
+}
+
+.intro-txt > i {
+    color: #c4c4c4;
+}
+
+.intro-txt > p {
+    color: #4f4f4f;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-style: italic;
+    margin-top: 0;
+    margin-left: 1em;
+}
+
+.intro > img {
+    border-radius: 1em;
+    max-width: 100%;
+}
+
+.info {
+    margin-top: 1em;
+}
+.info-card-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.info-card {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-rows: max-content max-content;
+    grid-template-areas:
+            "icon header"
+            "icon info";
+}
+
+.info-card .highlight {
+    color: var(--color-highlight);
+}
+
+.info-card > i {
+    grid-area: icon;
+    align-self: center;
+    margin-right: .5em;
+}
+
+.info-card > h1 {
+    color: #bdbdbd;
+    grid-area: header;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.info-card > p {
+    grid-area: info;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.625rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.ingredients {
+    font-family: 'Playfair Display', serif;
+}
+.ingredients > h1 {
+    font-size: 1.125rem;
+}
+
+.ingredients > h2 {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.check-item {
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+}
+
+.check-item > input {
+    cursor: pointer;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.check-item {
+    display: flex;
+    align-items: start;
+}
+
+.check-item > span {
+    display: block;
+}
+
+.instruction-list {
+    counter-reset: intruction-list;
+    padding: 0;
+}
+
+.instruction-list > li {
+    counter-increment: instruction-list;
+    list-style-type: none;
+    display: flex;
+    align-items: start;
+}
+
+.instruction-list > li:before {
+    display: flex;
+    color: #ffffff;
+    content: counter(instruction-list);
+    background-color: var(--color-highlight);
+    min-width: 2.3em;
+    min-height: 2.3em;
+    border-radius: 0.3em;
+    justify-content: center;
+    align-items: center;
+}
