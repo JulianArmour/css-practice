@@ -45,6 +45,7 @@ body {
 .info {
     margin-top: 1em;
 }
+
 .info-card-wrap {
     display: flex;
     justify-content: space-between;
@@ -91,6 +92,7 @@ body {
 .ingredients {
     font-family: 'Playfair Display', serif;
 }
+
 .ingredients > h1 {
     font-size: 1.125rem;
 }
@@ -115,8 +117,13 @@ body {
     position: absolute;
     left: -200vw;
 }
+
 .ingredient-item > .label {
     padding-top: .2em;
+}
+
+.ingredient-item > .label i {
+    font-weight: 500;
 }
 
 .ingredient-item > .checkbox-custom {
@@ -131,9 +138,9 @@ body {
 }
 
 .ingredient-item > .checkbox-custom > i {
-    /*display: none;*/
     opacity: 0;
 }
+
 .ingredient-item > input:checked + .checkbox-custom > i {
     /*display: inline;*/
     opacity: 1;
@@ -141,6 +148,13 @@ body {
 
 .ingredient-item > span {
     display: block;
+}
+
+.instructions > h1 {
+    color: #333333;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .instruction-list {
@@ -151,18 +165,34 @@ body {
 .instruction-list > li {
     counter-increment: instruction-list;
     list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
     display: flex;
     align-items: start;
+    margin-top: 1em;
 }
 
 .instruction-list > li:before {
-    display: flex;
+    display: block;
+    text-align: center;
+    /*justify-content: center;*/
+    /*align-items: center;*/
     color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
     content: counter(instruction-list);
     background-color: var(--color-highlight);
-    min-width: 2.3em;
-    min-height: 2.3em;
+    min-width: 1.6em;
+    min-height: 1.6em;
     border-radius: 0.3em;
-    justify-content: center;
-    align-items: center;
+    margin-right: 0.6em;
+}
+
+.footer {
+    color: #A9A9A9;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 8em;
 }
