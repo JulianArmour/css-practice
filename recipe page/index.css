@@ -11,6 +11,8 @@
 body {
     color: #333333;
     padding: 0.5em;
+    max-width: 60.6em;
+    margin: .5em auto
 }
 
 .intro > h1 {
@@ -38,12 +40,13 @@ body {
 }
 
 .intro > img {
-    border-radius: 1em;
     max-width: 100%;
+    border-radius: 1em;
+    margin-top: 1em;
 }
 
 .info {
-    margin-top: 1em;
+    margin-top: 2em;
 }
 
 .info-card-wrap {
@@ -91,10 +94,11 @@ body {
 
 .ingredients {
     font-family: 'Playfair Display', serif;
+    margin-top: 2em;
 }
 
 .ingredients > h1 {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
 }
 
 .ingredients > h2 {
@@ -195,4 +199,56 @@ body {
     font-weight: 600;
     text-align: center;
     margin-top: 8em;
+}
+
+@media screen and (min-width: 650px) {
+    :root {
+        font-size: 1.15em;
+    }
+
+    .intro h1 {
+        font-size: 3.0rem;
+    }
+
+    .intro-txt {
+        max-width: 66%;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 66.6% max-content;
+        grid-template-rows: max-content max-content;
+        grid-template-areas:
+                "ingredients info"
+                "instructions .";
+        justify-content: space-between;
+    }
+
+    .info {
+        grid-area: info;
+    }
+
+    .info-wrap {
+        padding: 1em 2em 2em;
+        border-radius: .8em;
+        box-shadow: 0 .125em .125em rgba(0, 0, 0, .12);
+    }
+
+    .info-card-wrap {
+        flex-flow: column;
+        margin-top: 0;
+    }
+
+    .info-card {
+        margin-top: 2em;
+    }
+
+    .ingredients {
+        grid-area: ingredients;
+    }
+
+    .instructions {
+        grid-area: instructions;
+    }
+
 }
