@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Checkout</title>
   <script src="https://kit.fontawesome.com/5e6d23a853.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
 <h1>Checkout</h1>
@@ -46,9 +47,57 @@
 </section>
 <section class="contact">
   <h2 class="contact__label">Contact information</h2>
-  <label>
-    <span>email</span>
+
+  <label for="input-email">email</label>
+  <div class="input-email">
     <i class="fas fa-envelope"></i>
+    <input id="input-email" type="email" placeholder="Enter your email...">
+  </div>
+
+  <label for="input-phone">phone</label>
+  <div class="input-phone">
+    <i class="fas fa-phone-alt"></i>
+    <input id="input-phone" type="tel" placeholder="Enter your phone number...">
+  </div>
+
+  <h2 class="shipping__label">Shipping address</h2>
+
+  <label for="input-fullname">fullname</label>
+  <div class="input-fullname">
+    <i class="fas fa-user-circle"></i>
+    <input id="input-fullname" type="text" placeholder="Enter your full name...">
+  </div>
+
+  <label for="input-address">address</label>
+  <div class="input-address">
+    <i class="fas fa-home"></i>
+    <input id="input-address" type="text" placeholder="Enter your address...">
+  </div>
+
+  <label for="input-city">city</label>
+  <div class="input-city">
+    <i class="fas fa-city"></i>
+    <input id="input-city" type="text" placeholder="Enter your city...">
+  </div>
+
+  <label for="input-country">country</label>
+  <div class="input-country">
+    <i class="fas fa-envelope"></i>
+    <select name="country" id="input-country">
+      <option value="United States">United States</option>
+      <option value="Canada">Canada</option>
+    </select>
+  </div>
+
+  <label for="input-postalcode">postalcode</label>
+  <div class="input-postalcode">
+    <i class="fas fa-envelope"></i>
+    <input id="input-postalcode" type="text" placeholder="Your postalcode...">
+  </div>
+
+  <label>
+    <input type="checkbox">
+    <span>Save this information for next time</span>
   </label>
 </section>
 </body>
