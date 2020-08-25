@@ -5,44 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Checkout</title>
   <script src="https://kit.fontawesome.com/5e6d23a853.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-<h1>Checkout</h1>
+<h1 class="page-header">Checkout</h1>
 <section class="cart">
   <section class="product">
-    <img src="photo1.png" alt="vintage backpack">
-    <h2>Vintage Backpack</h2>
-    <div class="price">
-      <span class="price__current">$54.99</span>
-      <span class="price__old">$94.99</span>
-    </div>
-    <div class="qty">
-      <button class="qty__minus">-</button>
-      <span class="qty__num">1</span>
-      <button class="qty_plus">+</button>
+    <img class="product__image" src="photo1.png" alt="vintage backpack">
+    <div class="product-cart-info">
+      <h2 class="product__name">Vintage Backpack</h2>
+      <div class="price">
+        <span class="price__current">$54.99</span>
+        <span class="price__old">$94.99</span>
+      </div>
+      <div class="qty">
+        <button class="qty__minus"><i class="fas fa-minus"></i></button>
+        <span class="qty__num">1</span>
+        <button class="qty_plus"><i class="fas fa-plus"></i></button>
+      </div>
     </div>
   </section>
   <section class="product">
-    <img src="photo2.png" alt="vintage backpack">
-    <h2>Levi Shoes</h2>
-    <div class="price">
-      <span class="price__current">$74.99</span>
-      <span class="price__old">$124.99</span>
-    </div>
-    <div class="qty">
-      <button class="qty__minus">-</button>
-      <span class="qty__num">1</span>
-      <button class="qty_plus">+</button>
+    <img class="product__image" src="photo2.png" alt="vintage backpack">
+    <div class="product-cart-info">
+      <h2 class="product__name">Levi Shoes</h2>
+      <div class="price">
+        <span class="price__current">$74.99</span>
+        <span class="price__old">$124.99</span>
+      </div>
+      <div class="qty">
+        <button class="qty__minus"><i class="fas fa-minus"></i></button>
+        <span class="qty__num">1</span>
+        <button class="qty_plus"><i class="fas fa-plus"></i></button>
+      </div>
     </div>
   </section>
-  <div class="shipping">
-    <h2 class="shipping_label">Shipping</h2>
-    <span class="shipping__cost">$19</span>
-  </div>
-  <div class="total">
-    <h2 class="total_label">Total</h2>
-    <span class="total__cost">$148.98</span>
+  <div class="cost-wrap">
+    <div class="cost">
+      <h2 class="cost__label">Shipping</h2>
+      <span class="cost__amount">$19</span>
+    </div>
+    <div class="cost">
+      <h2 class="cost__label">Total</h2>
+      <span class="cost__amount">$148.98</span>
+    </div>
   </div>
 </section>
 <section class="contact">
@@ -99,6 +106,11 @@
     <input type="checkbox">
     <span>Save this information for next time</span>
   </label>
+
+  <button type="submit">Continue</button>
 </section>
+<footer class="footer">
+  Julian Armour @ DevChallenges.io
+</footer>
 </body>
 </html>
