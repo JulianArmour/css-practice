@@ -53,56 +53,57 @@
   </div>
 </section>
 <section class="contact">
-  <h2 class="contact__label">Contact information</h2>
+  <h2 class="section__label">Contact information</h2>
 
-  <label for="input-email">email</label>
-  <div class="input-email">
+  <label class="label" for="input-email">Email</label>
+  <div class="input-wrap">
     <i class="fas fa-envelope"></i>
-    <input id="input-email" type="email" placeholder="Enter your email...">
+    <input id="input-email" class="input-wrap__input" type="email" placeholder="Enter your email...">
   </div>
 
-  <label for="input-phone">phone</label>
-  <div class="input-phone">
+  <label class="label" for="input-phone">Phone</label>
+  <div class="input-wrap">
     <i class="fas fa-phone-alt"></i>
-    <input id="input-phone" type="tel" placeholder="Enter your phone number...">
+    <input class="input-wrap__input" id="input-phone" type="tel" placeholder="Enter your phone number...">
   </div>
 
-  <h2 class="shipping__label">Shipping address</h2>
+  <h2 class="section__label">Shipping address</h2>
 
-  <label for="input-fullname">fullname</label>
-  <div class="input-fullname">
+  <label class="label" for="input-fullname">Full name</label>
+  <div class="input-wrap">
     <i class="fas fa-user-circle"></i>
-    <input id="input-fullname" type="text" placeholder="Enter your full name...">
+    <input class="input-wrap__input" id="input-fullname" type="text" placeholder="Enter your full name...">
   </div>
 
-  <label for="input-address">address</label>
-  <div class="input-address">
+  <label class="label" for="input-address">Address</label>
+  <div class="input-wrap">
     <i class="fas fa-home"></i>
-    <input id="input-address" type="text" placeholder="Enter your address...">
+    <input class="input-wrap__input" id="input-address" type="text" placeholder="Enter your address...">
   </div>
 
-  <label for="input-city">city</label>
-  <div class="input-city">
+  <label class="label" for="input-city">City</label>
+  <div class="input-wrap">
     <i class="fas fa-city"></i>
-    <input id="input-city" type="text" placeholder="Enter your city...">
+    <input class="input-wrap__input" id="input-city" type="text" placeholder="Enter your city...">
   </div>
 
-  <label for="input-country">country</label>
-  <div class="input-country">
+  <label class="label" for="input-country">Country</label>
+  <div class="input-wrap">
     <i class="fas fa-envelope"></i>
-    <select name="country" id="input-country">
-      <option value="United States">United States</option>
-      <option value="Canada">Canada</option>
+    <select class="input-wrap__select" name="country" id="input-country">
+      <option class="select__option" selected>Your country...</option>
+      <option class="select__option" value="United States">United States</option>
+      <option class="select__option" value="Canada">Canada</option>
     </select>
   </div>
 
-  <label for="input-postalcode">postalcode</label>
-  <div class="input-postalcode">
+  <label class="label" for="input-postalcode">Postalcode</label>
+  <div class="input-wrap">
     <i class="fas fa-envelope"></i>
-    <input id="input-postalcode" type="text" placeholder="Your postalcode...">
+    <input class="input-wrap__input" id="input-postalcode" type="text" placeholder="Your postal code...">
   </div>
 
-  <label>
+  <label class="label">
     <input type="checkbox">
     <span>Save this information for next time</span>
   </label>
