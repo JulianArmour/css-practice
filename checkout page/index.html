@@ -56,59 +56,67 @@
   <h2 class="section__label">Contact information</h2>
 
   <label class="label" for="input-email">Email</label>
-  <div class="input-wrap">
+  <div class="input">
     <i class="fas fa-envelope"></i>
-    <input id="input-email" class="input-wrap__input" type="email" placeholder="Enter your email...">
+    <input id="input-email" class="input__input" type="email" placeholder="Enter your email...">
   </div>
 
   <label class="label" for="input-phone">Phone</label>
-  <div class="input-wrap">
+  <div class="input">
     <i class="fas fa-phone-alt"></i>
-    <input class="input-wrap__input" id="input-phone" type="tel" placeholder="Enter your phone number...">
+    <input class="input__input" id="input-phone" type="tel" placeholder="Enter your phone number...">
   </div>
 
   <h2 class="section__label">Shipping address</h2>
 
   <label class="label" for="input-fullname">Full name</label>
-  <div class="input-wrap">
+  <div class="input">
     <i class="fas fa-user-circle"></i>
-    <input class="input-wrap__input" id="input-fullname" type="text" placeholder="Enter your full name...">
+    <input class="input__input" id="input-fullname" type="text" placeholder="Enter your full name...">
   </div>
 
   <label class="label" for="input-address">Address</label>
-  <div class="input-wrap">
+  <div class="input">
     <i class="fas fa-home"></i>
-    <input class="input-wrap__input" id="input-address" type="text" placeholder="Enter your address...">
+    <input class="input__input" id="input-address" type="text" placeholder="Enter your address...">
   </div>
 
   <label class="label" for="input-city">City</label>
-  <div class="input-wrap">
+  <div class="input">
     <i class="fas fa-city"></i>
-    <input class="input-wrap__input" id="input-city" type="text" placeholder="Enter your city...">
+    <input class="input__input" id="input-city" type="text" placeholder="Enter your city...">
   </div>
 
-  <label class="label" for="input-country">Country</label>
-  <div class="input-wrap">
-    <i class="fas fa-envelope"></i>
-    <select class="input-wrap__select" name="country" id="input-country">
-      <option class="select__option" selected>Your country...</option>
-      <option class="select__option" value="United States">United States</option>
-      <option class="select__option" value="Canada">Canada</option>
-    </select>
-  </div>
+  <div class="country-postal-wrap">
+    <div class="input-short-wrap">
+      <label class="label" for="input-country">Country</label>
+      <div class="input">
+        <i class="fas fa-envelope"></i>
+        <select class="input__select input-wrap__select--short" name="country" id="input-country">
+          <option class="select__option" selected>country...</option>
+          <option class="select__option" value="United States">United States</option>
+          <option class="select__option" value="Canada">Canada</option>
+        </select>
+      </div>
+    </div>
 
-  <label class="label" for="input-postalcode">Postalcode</label>
-  <div class="input-wrap">
-    <i class="fas fa-envelope"></i>
-    <input class="input-wrap__input" id="input-postalcode" type="text" placeholder="Your postal code...">
+    <div class="input-short-wrap">
+      <label class="label" for="input-postalcode">Postal code</label>
+      <div class="input">
+        <i class="fas fa-envelope"></i>
+        <input class="input__input input-wrap__input--short" id="input-postalcode" type="text" placeholder="Postal code...">
+      </div>
+    </div>
   </div>
-
-  <label class="label">
-    <input type="checkbox">
-    <span>Save this information for next time</span>
+  <label class="checkbox">
+    <input class="checkbox__input" type="checkbox">
+    <span class="checkbox__box">
+      <i class="checkbox__check fas fa-check"></i>
+    </span>
+    <span class="checkbox__label">Save this information for next time</span>
   </label>
 
-  <button type="submit">Continue</button>
+  <button class="checkout-btn" type="submit">Continue</button>
 </section>
 <footer class="footer">
   Julian Armour @ DevChallenges.io
