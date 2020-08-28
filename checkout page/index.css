@@ -95,7 +95,8 @@ body * + * {
 }
 
 .qty__minus,
-.qty_plus {
+.qty__plus {
+  cursor: pointer;
   background-color: #E0E0E0;
   color: #828282;
   font-size: .8em;
@@ -156,7 +157,7 @@ body * + * {
   display: flex;
   align-items: center;
   color: #828282;
-  padding: 0 .5em;
+  padding: .3em .5em;
   border: 1px solid #828282;
   border-radius: .7em;
   margin-top: .4em;
@@ -168,10 +169,14 @@ body * + * {
   font-size: .75rem;
   outline: none;
   border: none;
-  width: 80%;
+  width: 90%;
   height: 3em;
   margin-top: 0;
-  margin-left: .2em;
+  margin-left: 1em;
+}
+
+.input-short-wrap .input__input {
+  max-width: 80%;
 }
 
 .input__select {
@@ -236,11 +241,12 @@ body * + * {
 }
 
 .checkout-btn {
+  cursor: pointer;
   float: right;
   color: #ffffff;
   font-size: 1rem;
   background-color: #f2994a;
-  padding: 1em 3em;
+  padding: .9em 3em;
   border: none;
   border-radius: .8em;
 }
@@ -254,6 +260,9 @@ body * + * {
 }
 
 @media screen and (min-width: 780px) {
+  :root {
+    font-size: 1.3em;
+  }
   .main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -276,10 +285,6 @@ body * + * {
   .contact {
     grid-area: info;
     justify-self: right;
-    margin-top: 0;
-  }
-
-  .section__label {
     margin-top: 0;
   }
 }
