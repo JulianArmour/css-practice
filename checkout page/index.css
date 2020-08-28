@@ -20,10 +20,23 @@ body * + * {
   font-size: 1.5rem;
 }
 
+.main {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  max-width: 47.5em;
+  margin: 0 auto
+}
+
 .cart {
   background-color: #F2F2F2;
   padding: 2em;
   border-radius: 2em;
+  max-width: 21em;
+}
+
+.contact {
+  max-width: 22em;
 }
 
 .product {
@@ -45,6 +58,7 @@ body * + * {
   justify-content: space-between;
   min-width: 8em;
   margin-top: 0;
+  margin-left: 1em;
 }
 
 .product__name {
@@ -149,7 +163,7 @@ body * + * {
 }
 
 .input__input {
-  color: #828282;
+  color: #333333;
   font-family: Montserrat, sans-serif;
   font-size: .75rem;
   outline: none;
@@ -232,5 +246,40 @@ body * + * {
 }
 
 .footer {
+  color: #A9A9A9;
+  font-size: .875rem;
   clear: right;
+  text-align: center;
+  margin-top: 10em;
+}
+
+@media screen and (min-width: 780px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "header ."
+        "info cart";
+    grid-column-gap: 5em;
+  }
+
+  .page-header {
+    grid-area: header;
+  }
+
+  .cart {
+    grid-area: cart;
+    align-self: start;
+    justify-self: left;
+  }
+
+  .contact {
+    grid-area: info;
+    justify-self: right;
+    margin-top: 0;
+  }
+
+  .section__label {
+    margin-top: 0;
+  }
 }
