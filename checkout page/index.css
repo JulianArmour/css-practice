@@ -259,7 +259,7 @@ body * + * {
   margin-top: 10em;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 1000px) {
   :root {
     font-size: 1.3em;
   }
